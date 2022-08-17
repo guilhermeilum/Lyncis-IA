@@ -132,3 +132,5 @@ dmypy.json
 #Project
 .vscode
 dados/integrated_dataset.csv
+dados/municipio.csv
+teste.ipynb

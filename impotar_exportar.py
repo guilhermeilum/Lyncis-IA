@@ -1,7 +1,7 @@
 import pandas as pd
-def main(dados):
+def main(dados,municipio):
     dado_principal(dados)
-    municipios()
+    municipios(municipio)
 
 def dado_principal(dados):
     #Primeiro iremos ler os dados do Csv, já lendo apenas as colunas já selecionadas e definindo seu tipo.
@@ -11,12 +11,12 @@ def dado_principal(dados):
     #Exportamos esses dados para pickle para ficar mais fácil de fazer o upload.
     df.to_pickle("dados\Dados_utilizaveis")
 
-def municipios():
+def municipios(municipios_dados):
     #Para os dados dos municipios faremos os mesmos passos.
-    municipio = pd.read_csv("dados\municipio.csv", dtype={"sigla_uf":"category"})
+    municipio = pd.read_csv(municipios_dados, dtype={"sigla_uf":"category"})
     logic1 = municipio["ano"] >= 2009
     logic2 = municipio["ano"] <=2019
     municipio = municipio.loc[logic1 & logic2]
     municipio.to_pickle("dados\municipio")
 
-main("dados\integrated_dataset.csv")
+main("dados\integrated_dataset.csv","dados\municipio.csv")

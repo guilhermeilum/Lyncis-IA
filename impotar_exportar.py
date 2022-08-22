@@ -17,6 +17,7 @@ def municipios(municipios_dados):
     logic1 = municipio["ano"] >= 2009
     logic2 = municipio["ano"] <=2019
     municipio = municipio.loc[logic1 & logic2]
+    municipio = municipio.dropna(axis=0)
     municipio.to_pickle("dados\municipio")
 
 main("dados\integrated_dataset.csv","dados\municipio.csv")

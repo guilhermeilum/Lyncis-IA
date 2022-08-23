@@ -140,11 +140,13 @@ def plot_graficos(tabela_plot):
 
 
 def matriz_covariancia(df):
+    print("Matriz de covariancia.\n")
     matriz = df.cov()
     print(matriz)
 
 
 def descricao(df):
+    print("Descrição da tablela de chance minima de contaminação.\n")
     tabela_descricao = df.describe()
     print(tabela_descricao)
 
@@ -170,7 +172,7 @@ def main():
         tabela_casos / tabela_população * 100
     )  # tabela de percentagem da chance
     tabela_chance["mes"] = list(range(1, 13))  # Arrumando a coluna mês
-    print(tabela_chance)
+    print("tabela de chance minima de contaminação.\n",tabela_chance)
     descricao(tabela_chance)
     plot_graficos(tabela_chance)
     matriz_covariancia(tabela_chance)

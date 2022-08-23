@@ -1,5 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import seaborn as sns
 
 
 def importar():
@@ -140,9 +141,21 @@ def plot_graficos(tabela_plot):
 
 
 def matriz_covariancia(df):
-    print("Matriz de covariancia.\n")
+    df["mes"] = minmax_norm(df, "mes")
+    for i in range(2010, 2020):
+        df[str(i)] = minmax_norm(df, str(i))
+    print("\nMatriz normalizada\n")
+    print(df)
+    print("\nMatriz de covariancia.\n")
     matriz = df.cov()
     print(matriz)
+    sns.heatmap(matriz, xticklabels=matriz.columns, yticklabels=matriz.columns)
+    plt.title("Covariância")
+    plt.show()
+
+
+def minmax_norm(df, coluna):
+    return (df[coluna] - df[coluna].min()) / (df[coluna].max() - df[coluna].min())
 
 
 def descricao(df):

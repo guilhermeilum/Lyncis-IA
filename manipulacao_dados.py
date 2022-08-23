@@ -172,7 +172,7 @@ def main():
         tabela_casos / tabela_população * 100
     )  # tabela de percentagem da chance
     tabela_chance["mes"] = list(range(1, 13))  # Arrumando a coluna mês
-    print("tabela de chance minima de contaminação.\n",tabela_chance)
+    print("tabela de chance minima de contaminação.\n", tabela_chance)
     descricao(tabela_chance)
     plot_graficos(tabela_chance)
     matriz_covariancia(tabela_chance)

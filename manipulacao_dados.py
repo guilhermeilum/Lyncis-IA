@@ -4,9 +4,9 @@ import seaborn as sns
 
 
 def importar():
-    """importa os dados nescessarios e devolve dois dados, tabela da malaria e dados dos municipios
+    """importa os dados necessários e devolve dois dados: tabela da malária e dados dos municípios
     arg: nenhum
-    retunr: df =  tabela pandas base de dados e municipios = tabela pandas dos municipios e população por ano."""
+    retunr: df =  tabela pandas para base de dados e municipios = tabela pandas dos municipios e da população por ano."""
     df = pd.read_pickle("dados\Dados_utilizaveis")
     # criar coluna com dados de casos confirmados como 1, outros resultados como 0
     df["detection.numerico"] = df["detection.type"].map(
@@ -18,9 +18,9 @@ def importar():
 
 
 def municipios_unicos(df, year):
-    """Descobre municipios relatados em cada ano, não os repetindo
-    arg: base de dados e ano em questão
-    return: matriz dos munipios em cada mes do ano"""
+    """Descobre municípios relatados em cada ano, não repetindo-os
+    arg: base de dados e de ano em questão
+    return: matriz dos municípios em cada mês do ano"""
     logic = df["notification.year"] == year
     municipio_unico_cada_mes = (
         df.loc[logic].groupby("notification.month")["infection.county"].unique()
@@ -32,8 +32,8 @@ def descobrir_população_por_mes(
     municipio, municipio_unico_cada_mes, ano, tabela_população
 ):
     """Descobre a polulação total de cada mês
-    Arg: tabela de dados de municipio, tabela de dados de municipio unico, ano de referencia,tabela depopulação para add dados novos
-    Return: tabela, com primeira colula dos meses e segunda da população total, com referencia o ano"""
+    Arg: tabela de dados de município, tabela de dados de município único, ano de referência, tabela de população para adicionar dados novos
+    Return: tabela, com primeira colula dos meses e segunda, da população total; com referência ao ano"""
     # todas as colunas do respectivo ano
     logic1 = municipio["ano"] == ano
     mes = 0

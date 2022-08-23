@@ -151,11 +151,14 @@ def matriz_covariancia(df):
     print(matriz)
     sns.heatmap(matriz, xticklabels=matriz.columns, yticklabels=matriz.columns)
     plt.title("Covariância")
+    plt.savefig(
+        "matriz_covariancia.png", dpi=300, format="png", facecolor="white"
+    )  # Salvar figura com o gráfico, fundo branco
     plt.show()
 
 
 def minmax_norm(df, coluna):
-    return (df[coluna] - df[coluna].min()) / (df[coluna].max() - df[coluna].min())
+    return (df[coluna] - df[coluna].mean()) / df[coluna].std()
 
 
 def descricao(df):

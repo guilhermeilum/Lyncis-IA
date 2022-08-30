@@ -13,7 +13,9 @@ def importar():
         {"active": 1, "passive": 0, "CVL": 0}
     )
     municipio = pd.read_pickle("dados\municipio")
-    municipio["id_municipio"] = municipio["id_municipio"] // 10 #Tirado ultimo digito do ID para facilitar seu uso, pois não possue diferencia retirar esse digito para o uso final.
+    municipio["id_municipio"] = (
+        municipio["id_municipio"] // 10
+    )  # Tirado ultimo digito do ID para facilitar seu uso, pois não possue diferencia retirar esse digito para o uso final.
     return df, municipio
 
 

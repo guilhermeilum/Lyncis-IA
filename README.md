@@ -2,7 +2,11 @@
 
 ## Projeto criado para análise de dados da malária na Amazônia Legal através de Machine Learning
 
+<<<<<<< HEAD
 Os dados utilizados para esse projeto foram extraídos de do domínio <https://doi.org/10.7303/syn21552203>, de um estudo realizado na Amazônia Legal sobre malária. A partir disso, pensamos em desenvolver um mecanismo probabilistíco por Machine Learning sobre possível taxa de infecção quando se está/visita algum munícipio dos considerados.
+=======
+Os dados utilizados para esse projeto foram extraídos do domínio https://doi.org/10.7303/syn21552203, de um estudo realizado na Amazônia Legal sobre malária. A partir disso, pensamos em desenvolver um mecanismo probabilistíco por Machine Learning sobre possível taxa de infecção quando se está/visita algum munícipio dos considerados.
+>>>>>>> 2b308768563c149f46649103802ca9d55ee5c1f2
 
 ### Descrição dos arquivos
 

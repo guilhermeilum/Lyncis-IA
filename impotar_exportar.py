@@ -15,6 +15,7 @@ def dado_principal(dados):
             "infection.county",
             "infection.state",
             "infection.hr",
+            "notification.county",
             "notification.month",
             "notification.year",
             "detection.type",
@@ -29,6 +30,15 @@ def dado_principal(dados):
     )
     # Após apagamos todas as linhas que contem algum dado em branco, fazendo isso diminuímos de praticamente 22 milhões para 2 milhões de dados.
     df = df.dropna(axis=0)
+    df = df.reindex(list(range(len(df))))
+    logic1=[]
+    for i in range(len(df)):
+        if df["infection.county"][i]==df["notification.county"][i]:
+            logic1.append(True)
+        else:
+            logic1.append(False)
+    df = df.loc[logic1]
+    df = df.drop(["notification.county"],axis=1)
     # Exportamos esses dados para pickle para ficar mais fácil de fazer o upload.
     df.to_pickle("dados\Dados_utilizaveis")
 

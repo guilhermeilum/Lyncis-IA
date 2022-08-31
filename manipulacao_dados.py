@@ -134,7 +134,10 @@ def plot_graficos(tabela_plot):
         ax9,
         ax10,
     ]:  # Ajustar o range dos eixos-y de todos os gráficos, para uniformizar
-        plt.setp(ax, ylim=(0, 0.2))
+        itens = [str(i)for i in range(2010,2020)] #lista para pegar apenas itens corretos
+        numero_maximo = tabela_plot[itens].max().max()
+        valor_minimo = tabela_plot[itens].min().min()
+        plt.setp(ax, ylim=(valor_minimo-(valor_minimo/25),numero_maximo+(numero_maximo/25)))
 
     plt.savefig(
         "grafico.png", dpi=300, format="png", facecolor="white"
@@ -143,9 +146,9 @@ def plot_graficos(tabela_plot):
 
 
 def matriz_covariancia(df):
-    df["mes"] = minmax_norm(df, "mes")
+    df["mes"] = normalizar(df, "mes")
     for i in range(2010, 2020):
-        df[str(i)] = minmax_norm(df, str(i))
+        df[str(i)] = normalizar(df, str(i))
     print("\nMatriz normalizada\n")
     print(df)
     print("\nMatriz de covariancia.\n")
@@ -159,7 +162,7 @@ def matriz_covariancia(df):
     plt.show()
 
 
-def minmax_norm(df, coluna):
+def normalizar(df, coluna):
     return (df[coluna] - df[coluna].mean()) / df[coluna].std()
 
 

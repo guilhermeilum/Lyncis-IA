@@ -8,4 +8,5 @@ Inicialmente, Guilherme corrigiu o eixo a ser tomado: ao invés de utilizarmos a
 ### 20/09/2022
 Na segunda semana, devido à saúde comprometida do líder, o Guilherme assumiu como substituto. Como tarefas, arrumamos valores numéricos para estipular como *target* e progredimos na construção do bloco 2.
 ### 26/09/2022
-Para a terceira semana, visando a finalização do bloco 2, as tarefas foram remanejadas, de modo a evitar uma grande independência entre os participantes do grupo. Entretanto, obviamente, havendo a comunicação sobre as tarefas efetuadas.
+Para a terceira semana, visando a finalização do bloco 2, as tarefas foram remanejadas, de modo a evitar uma grande independência entre os participantes do grupo - as tarefas **4**, **5**, **6** e **7** foram divididas, ficando o bloco 2 igualmente dividido. Entretanto, obviamente, havendo a comunicação sobre as ações efetuadas.
+<br> Em suma, a tarefa **1** foi feita por Shaian e Gustavo. Posteriormente, as tarefas **2** e **6** foram exercidas pelo Gustavo. Analogamente, as tarefas **3** e **7** foram realizadas pelo Shaian e **4** e **5** praticadas pelo Guilherme.

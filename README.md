@@ -7,8 +7,12 @@ Os dados utilizados para esse projeto foram extraídos de do domínio <https://d
 ### Descrição dos arquivos
 
 <ul>
-  <li>Pasta “dados”: contém todos os dados necessários para utilizar no arquivo “manipulacao_dados.py”, já o arquivo “importar_expotar.py” é utilizado unicamente para tratar previamente os dados com tamanho reduzido e exportando o arquivo para o modelo pickle, ao invés do csv, para melhor rapidez.</li>
-  <li>O arquivo “manipulacao_dados.py” termina de tratar os dados e <em>plota</em>, por enquanto, o mínimo da chance de alguém contrair malária em cada mês e variando os anos, comparado com a somatória da população dos municípios que teve a infecção.</li>
+  <li>Pasta “dados”: contém todos os dados necessários para utilizar no arquivo “manipulacao_dados.py”, já o arquivo “importar_expotar.py” é utilizado unicamente para tratar previamente os dados com tamanho reduzido e exportando o arquivo para o modelo pickle, ao invés do csv, para melhor rapidez. Dentro existem os "Dados_utilizaveis", que são os dados que estamos utilizando no nosso <em>Machine Learning</em>, uma lista com o código dos munícipios do Brasil e os dados de latitude e longitude respectivos.</li>
+  <li>O arquivo “manipulacao_dados.py” termina de tratar os dados, extraídos pelo comando do arquivo "impotar_exportar.py", e <em>plota</em>, por enquanto, o mínimo da chance de alguém contrair malária em cada mês e variando os anos, comparado com a somatória da população dos municípios que teve a infecção.</li>
+  <li>O "grafico.png" foi feito para uma análise preliminar de todos os dados.</li>
+  <li>O "manuscrito.md" é uma espécie de diário de bordo sobre as atividades do grupo, atualizado por cada líder durante seu "mandato". Vale a ressalva que o manuscrito foi posta em prática a partir do Bloco 2.
+  <li>O "requerimentos.txt" é um arquivo onde estão contidas as bibliotecas instalas e utilizadas no nosso <em>Machine Learning</em>, tais como: Numpy, Pandas, SciKit-Learn.
+  <li>E, finalmente, no arquivo "treino.ipynb" é onde a mágica acontece! Estão contidas todas as informações a respeito do nosso projeto que podem ser visualizadas rodando o programa.
 
 </ul>
 

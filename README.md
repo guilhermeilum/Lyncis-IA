@@ -13,8 +13,7 @@ Os dados utilizados para esse projeto foram extraídos de do domínio <https://d
   <li>O "manuscrito.md" é uma espécie de diário de bordo sobre as atividades do grupo, atualizado por cada líder durante seu "mandato". Vale a ressalva que o manuscrito foi posta em prática a partir do Bloco 2.
   <li>O "requerimentos.txt" é um arquivo onde estão contidas as bibliotecas instalas e utilizadas no nosso <em>Machine Learning</em>, tais como: Numpy, Pandas, SciKit-Learn.
   <li>E, finalmente, no arquivo "treino.ipynb" é onde a mágica acontece! Estão contidas todas as informações a respeito do nosso projeto que podem ser visualizadas rodando o programa.
-  
-    <li>O arquivo "unsupervised.ipynb" é onde foi trabalhado os dados criando PCA, modelos não supervisionados e também foi localizado dados anômalos.
+  <li>O arquivo "unsupervised.ipynb" é onde foi trabalhado os dados criando PCA, modelos não supervisionados e também foi localizado dados anômalos.
     
 </ul>
 

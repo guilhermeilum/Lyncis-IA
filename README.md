@@ -21,5 +21,6 @@ Os dados utilizados para o desenvolvimento desse projeto foram extraídos de um 
   <li>Arquivo "requerimentos.txt": são todas as bibliotecas instaladas e, portanto, utilizadas, tais como: Numpy, Pandas, SciKit-Learn;</li>
   <li>Arquivo "treino.ipynb": desenvolvimento prático da análise probabilística; </li>
   <li>Arquivo "unsupervised.ipynb": estudo de modelos não supervisionados, algoritmos PCA e dados anômalos.</li>
+  <li>Arquivo "Validação_cruzada.ipynb": uso de validação cruzada para testar hiperparemetros.</li>
     
 </ul>

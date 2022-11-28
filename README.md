@@ -1,22 +1,25 @@
 <h1 align="center"> Lyncis-IA </h1>
 
-## Projeto criado para análise de dados da malária na Amazônia Legal através de Machine Learning
+## Projeto elaborado para o estudo analítico (desenvolvido com _Machine Learning_) de dados anamnéticos sobre casos de malária relacionados à Amazônia Legal.
 
-Os dados utilizados para esse projeto foram extraídos de do domínio <https://doi.org/10.7303/syn21552203>, de um estudo realizado na Amazônia Legal sobre malária. A partir disso, pensamos em desenvolver um mecanismo probabilistíco por Machine Learning sobre possível taxa de infecção quando se está/visita algum munícipio dos considerados.
+Os dados utilizados para o desenvolvimento desse projeto foram extraídos de um repositório da Synapse, [_An Integrated Dataset of Malaria Notifications in the Legal Amazon_](https://doi.org/10.7303/syn21552203). À vista disso, foi desenvolvido um mecanismo probabilístico, o qual visa mensurar a taxa de infecção por _Plasmodium sp._ quando se visita ou mora em algum dos munícipios documentados.
+
+#### por Guilherme Gurian Dariani, Shaian José Anghinoni e Gustavo Duarte Verçosa.
 
 ### Descrição dos arquivos
 
 <ul>
-  <li>Pasta “dados”: contém todos os dados necessários para utilizar no arquivo “manipulacao_dados.py”, já o arquivo “importar_expotar.py” é utilizado unicamente para tratar previamente os dados com tamanho reduzido e exportando o arquivo para o modelo pickle, ao invés do csv, para melhor rapidez. Dentro existem os "Dados_utilizaveis", que são os dados que estamos utilizando no nosso <em>Machine Learning</em>, uma lista com o código dos munícipios do Brasil e os dados de latitude e longitude respectivos.</li>
-  <li>O arquivo “manipulacao_dados.py” termina de tratar os dados, extraídos pelo comando do arquivo "impotar_exportar.py", e <em>plota</em>, por enquanto, o mínimo da chance de alguém contrair malária em cada mês e variando os anos, comparado com a somatória da população dos municípios que teve a infecção.</li>
-  <li>O "grafico.png" foi feito para uma análise preliminar de todos os dados.</li>
-  <li>O "manuscrito.md" é uma espécie de diário de bordo sobre as atividades do grupo, atualizado por cada líder durante seu "mandato". Vale a ressalva que o manuscrito foi posta em prática a partir do Bloco 2.
-  <li>O "requerimentos.txt" é um arquivo onde estão contidas as bibliotecas instalas e utilizadas no nosso <em>Machine Learning</em>, tais como: Numpy, Pandas, SciKit-Learn.
-  <li>E, finalmente, no arquivo "treino.ipynb" é onde a mágica acontece! Estão contidas todas as informações a respeito do nosso projeto que podem ser visualizadas rodando o programa.
-  <li>O arquivo "unsupervised.ipynb" é onde foi trabalhado os dados criando PCA, modelos não supervisionados e também foi localizado dados anômalos.
+  <li>Pasta “dados”: contém todos os dados necessários para o estudo.</li>
+<ul>
+  <li>Arquivo ".gitignore": utilizado para designar arquivos e diretórios ignorados;</li>
+  <li>Arquivo "LICENSE": usado para compartilhar <em>software</em> de código aberto;</li>
+  <li>Arquivo "README.md": apresenta informações do projeto, é o que está lendo agora;</li>
+  <li>Arquivo "grafico.png": feito para uma análise preliminar de todos os dados;</li>
+  <li>Arquivo "importar_exportar.py": trata previamente os dados com tamanho reduzido e exporta o arquivo para o modelo <em>pickle</em>, ao invés do <em>csv</em> (a fim de ser mais rápido). Possui "Dados_utilizaveis", que contêm o código dos munícipios do Brasil e os dados de latitude e longitude respectivos, sendo então as informações utilizadas para elaborar o estudo de <em>Machine Learning</em>;</li>
+  <li>Arquivo "manipulacao_dados.py":  termina de tratar os dados e <em>plota</em> a chance mínima de alguém contrair malária em cada mês (variando os anos), comparado com a somatória da população dos municípios que teve a infecção;</li>
+  <li>Arquivo "matriz_covariancia.png": análise da interligação entre meses;</li>
+  <li>Arquivo "requerimentos.txt": são todas as bibliotecas instaladas e, portanto, utilizadas, tais como: Numpy, Pandas, SciKit-Learn;</li>
+  <li>Arquivo "treino.ipynb": desenvolvimento prático da análise probabilística; </li>
+  <li>Arquivo "unsupervised.ipynb": estudo de modelos não supervisionados, algoritmos PCA e dados anômalos.</li>
     
 </ul>
-
-<h4 align="center">
-    :construction:  Projeto em construção  :construction:
-</h4>
